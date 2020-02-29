@@ -39,6 +39,22 @@ while (i < 10) {
     i++;
 }
 
+/* Działanie na tablicach */
+const table = [1,2,3,4,5,6,7,9];
+
+const onlyEven = table.filter(value => value % 2 === 0);
+
+
+function printIndexAndValue(value, index) {
+    console.log(`${index}: ${value}`);
+}
+
+onlyEven.forEach(printIndexAndValue);
+onlyEven.reverse();
+onlyEven.forEach(printIndexAndValue);
+onlyEven.slice(0, 2).forEach(printIndexAndValue);
+
+
 /* DOM API */
 // https://developer.mozilla.org/en-US/docs/Web/API/Document
 
@@ -50,7 +66,7 @@ newDiv.classList = ['nazwa-klasy'];
 const body = document.getElementsByTagName('body');
 const id = document.getElementById('id');
 
-// API może zwrócić undefined - wywołanie funkcji na obiekcie undefiend zwróci błąd
+// API może zwrócić undefined - wywołanie funkcji na obiekcie undefiend zwróci błąd, zabezpieczenie:
 // if (id) {
 //     id.append(document.createElement('p'));
 // }
