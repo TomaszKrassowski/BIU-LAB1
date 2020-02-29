@@ -1,18 +1,18 @@
 /* Podstawowe typy danych: */
-let calkowita = 1;
-let ulamek = 1.0;
-let wykladnicza = 1e2;
-let napis = '1';
-let boolowska = true;
+let int = 1;
+let float = 1.0;
+let scientific = 1e2;
+let string = '1';
+let boolean = true;
 let array = [1,2,3, '4', '5', true];
-let obj = { 1: 1, '2': 2, '3': wykladnicza };
+let object = { 1: 1, '2': 2, '3': wykladnicza };
 let u = undefined;
 let n = null;
 
-const niezmienialnaZmienna = '';
-// niezmienialnaZmienna = 1; // - błąd
+const constValue = '';
+// constValue = 1; // - błąd
 
-function funkcja(argument1, argument2) {
+function func(argument1, argument2) {
     return argument1 + argument2;
 };
 
