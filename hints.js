@@ -5,7 +5,7 @@ let scientific = 1e2;
 let string = '1';
 let boolean = true;
 let array = [1,2,3, '4', '5', true];
-let object = { 1: 1, '2': 2, '3': wykladnicza };
+let object = { 1: 1, '2': 2, '3': scientific };
 let u = undefined;
 let n = null;
 
@@ -80,7 +80,7 @@ function logData(data) {
     console.log(data);
 }
 
-const url = 'https://api.coinpaprika.com/globals';
+let url = 'https://api.coinpaprika.com/v1/global';
 fetch(url)
     .then((response) => {
         return response.json();
